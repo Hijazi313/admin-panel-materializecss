@@ -1,0 +1,18 @@
+.loader {
+  position: absolute !important;
+  top: 47%;
+  left: 47%;
+}
+
+.todos {
+  overflow: auto;
+  height: 150px;
+}
+
+
+.btn-extended{
+  display: block;
+  width: 80%;
+  margin: auto;
+margin-top: 20px;
+}
