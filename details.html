@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" />
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- Import main.css -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Posts : Madmin </title>
+</head>
+
+<body class="grey lighten-4">
+    <!-- Top and Side Navigation -->
+    <nav class="blue darken-2">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="/" class="brand-logo">Madmin </a>
+                <a href="" data-activates="side-nav" class="button-collapse show-on-large right">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html"> Dashboard</a></li>
+                    <li><a href="posts.html"> Posts</a></li>
+                    <li><a href="categories.html"> Categories</a></li>
+                    <li><a href="comments.html"> Comments</a></li>
+                    <li><a href="users.html"> Users</a></li>
+                </ul>
+
+                <!-- Side Nav -->
+                <ul id="side-nav" class="side-nav">
+                    <li>
+                        <div class="user-view">
+                            <div class="background">
+                                <img src="./img/ocean.jpg" alt="" srcset="" />
+                            </div>
+                            <a href="#">
+                                <img src="./img/person1.jpg" alt="" srcset="" class="circle" />
+                            </a>
+                            <a href="">
+                                <span class="name black-text">Jhon Doe</span>
+                            </a>
+                            <a href="">
+                                <span class="email white-text">JhonDoe@gmail.com</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="active"><a href="index.html"> Dashboard</a></li>
+                    <li><a href="posts.html"> Posts</a></li>
+                    <li><a href="categories.html"> Categories</a></li>
+                    <li>
+                        <div class="divider"></div>
+                    </li>
+                    <li>
+                        <a href="login.html" class="subheader"> Account Settings</a>
+                    </li>
+                    <li>
+                        <a href="login.html" class="waves-effect"> Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- / Navigation -->
+
+    <!-- Section : Details -->
+    <section class="section section-posts grey lighten-4">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="row">
+                                <div class="col s12 m6">
+                                    <span class="card-title"> Post Details</span>
+                                </div>
+                                <div class="col s12 m6">
+                                    <img src="./img/person2.jpg" alt="" class="responsive-img  circle"
+                                        style="width:40px; margin-left:10px">
+                                    <p>Posted By Jhon Doe</p>
+                                    <p>On jan, 12, 2020</p>
+                                </div>
+                            </div>
+                            <form>
+                                <div class="input-field">
+                                    <input type="text" id="title" value="Post One" />
+                                    <label for="title">Title</label>
+                                </div>
+                                <div class="input-field">
+                                    <select class="select">
+                                        <option value="" selected disabled>Select Option</option>
+                                        <option value="1">Web Development</option>
+                                        <option value="2">Graphic Design</option>
+                                        <option value="3">Tech Gadgets</option>
+                                    </select>
+                                    <label for="">Category</label>
+                                </div>
+                                <div class="input-field">
+                                    <textarea name="body" id="body" cols="30" rows="10"
+                                        class="materialize-text-area">This is the content for post one</textarea>
+                                </div>
+                            </form>
+
+                            <div class="card-action">
+                                <button class="btn green">Save</button>
+                                <button class="btn red">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section blue darken-2 black-text center">
+        M-Admin Panel &copy; 2020.
+    </footer>
+    <!-- Fixed Action Button -->
+    <div class="fixed-action-btn">
+        <a href="#post-modal" class="modal-trigger btn-floating btn-large red">
+            <i class="material-icons">add</i>
+        </a>
+        <ul>
+
+        </ul>
+    </div>
+    <!-- Preloader -->
+    <div class="loader preloader-wrapper big active">
+        <div class="spinner-layer spinner-blue">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+                <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+        </div>
+
+        <div class="spinner-layer spinner-red">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+                <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+        </div>
+
+        <div class="spinner-layer spinner-yellow">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+                <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+        </div>
+
+        <div class="spinner-layer spinner-green">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+                <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/15.0.0/classic/ckeditor.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <script>
+        // HIDE SECTION
+        $(".button-collapse").sideNav();
+
+        $(".section").hide();
+
+        setTimeout(function () {
+            $(document).ready(function () {
+                // Hide Preloader
+                $(".loader").fadeOut();
+                // Hide CanvasJS Credit
+                $(".canvasjs-chart-credit").hide();
+
+                // Show Sections
+                $(".section").fadeIn();
+                $(".modal").modal();
+                $(".select").material_select();
+
+
+
+
+                //
+                ClassicEditor.create(document.querySelector("#body")).catch(error => {
+                    console.error(error);
+                });
+                //
+            });
+        }, 1000);
+    </script>
+</body>
+
+</html>
